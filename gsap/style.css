@@ -3,15 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif;
+    color: #fff;
 }
 
 html, body{
     height: 100%;
     width: 100%;
+    background-color: #1d1d1d;
 }
 
-.box{
-    height: 200px;
-    width: 200px;
-    background-color: red;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div{
+    display: flex;
+    gap: 20px;
 }
