@@ -10,14 +10,102 @@ html, body{
     height: 100%;
     width: 100%;
     background-color: #1d1d1d;
+    
 }
-
+/* 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 50px;
 }
 nav div{
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    margin-right: 20px;
+}
+nav div  li{
+    list-style: none;
+}
+
+h2{
+    position: absolute;
+    left: 50%;  
+    top: 50%;
+    transform: translate(-50%, 50% );
+    font-size: 80px;
+    white-space: no-wrap;
+} */
+
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(83, 203, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+#page2 h1{
+    font-size: 50px;
+    color:#1d1d1d;
+    position: relative;
+}
+#page2 h2{
+    font-size: 50px;
+    color:yellow;
+    position: relative;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30, 182, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+#mypopover{
+    height: 200px;
+    width: 200px;
+    background-color:green;
+    text-align: center;
+    padding: 50px;
+    border-radius: 4px;
+    border: none;
+
+    
+}
+#page3 #mypopover:popover-open{
+    opacity: 1;
+    transform: scaleX(1);
+}
+#popover{
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.7s allow-discrete;
+    
+}
+
+@starting-style{
+    
+    #popover:popover-open{
+        opacity: 0;
+        transform:scale(0);
+    }
 }
